@@ -1,15 +1,60 @@
-.login {
+.login-container {
   width: 55vw;
   height: 50vh;
   display: flex;
-  flex-flow: column;
-  gap: 2rem;
+  flex-flow: row wrap;
   place-content: center;
   place-items: center;
   background-color: rgb(208, 219, 219);
-  border-radius: 1vw 2vw 2vw 100vw;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.login-field-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  place-content: center;
+  place-items: center;
+  gap: 2rem;
+  overflow: hidden;
   background-image: url("../src/assets/back.svg"),
     url("../src/assets/back_2.svg"), url("../src/assets/back_3.svg");
-  background-position: top left, bottom right, top right;
+  background-position: bottom left, bottom right, top right;
   background-repeat: no-repeat;
+}
+.container-right {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(219, 221, 221);
+  background-image: url("../assets/back_4.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-right-text {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgba(26, 27, 27, 0.1),
+    rgba(0, 0, 0, 0.5),
+    rgba(17, 17, 17, 0.9)
+  );
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  place-content: center;
+  place-items: center;
+  color: aliceblue;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.container-right-text span {
+  height: 1rem;
+  width: 1rem;
+  clip-path: circle(50% at 50% 50%);
+  background-color: aqua;
+  
 }

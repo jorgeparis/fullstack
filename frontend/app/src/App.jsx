@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className="main-app">
-        <Login />
+        <Login/>
       </div>
     </>
   );
