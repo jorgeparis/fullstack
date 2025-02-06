@@ -1,0 +1,15 @@
+.login {
+  width: 55vw;
+  height: 50vh;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  place-content: center;
+  place-items: center;
+  background-color: rgb(208, 219, 219);
+  border-radius: 1vw 2vw 2vw 100vw;
+  background-image: url("../src/assets/back.svg"),
+    url("../src/assets/back_2.svg"), url("../src/assets/back_3.svg");
+  background-position: top left, bottom right, top right;
+  background-repeat: no-repeat;
+}

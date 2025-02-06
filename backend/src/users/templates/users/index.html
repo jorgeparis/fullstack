@@ -12,6 +12,10 @@
     </style>
   </head>
   <body>
-    <h1>Ola</h1>
+    <ul>
+      {%for user in users%}
+      <li>{{user.title}}</li>
+      {%endfor%}
+    </ul>
   </body>
 </html>
