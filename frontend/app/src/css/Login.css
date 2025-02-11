@@ -23,6 +23,7 @@
     url("../src/assets/back_2.svg"), url("../src/assets/back_3.svg");
   background-position: bottom left, bottom right, top right;
   background-repeat: no-repeat;
+  background-size: 30%;
 }
 .container-right {
   width: 50%;
@@ -56,5 +57,10 @@
   width: 1rem;
   clip-path: circle(50% at 50% 50%);
   background-color: aqua;
-  
+}
+
+@media (max-width: 330px) {
+  .container-right {
+    display: none;
+  }
 }

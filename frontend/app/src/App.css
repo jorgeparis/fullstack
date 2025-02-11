@@ -1,9 +1,7 @@
 .main-app {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-flow: column;
-  gap: 2rem;
+  display: grid;
+  row-gap: 2rem;
   place-content: center;
-  place-items: center;
 }

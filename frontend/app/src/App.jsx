@@ -8,15 +8,10 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 
 function App() {
-  function handleClick(e) {
-    if (e.target === "button") {
-      console.log(e.target);
-    }
-  }
   return (
     <>
       <div className="main-app">
-        <Login/>
+        <Login />
       </div>
     </>
   );

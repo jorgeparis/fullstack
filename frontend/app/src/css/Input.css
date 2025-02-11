@@ -2,7 +2,7 @@
   accent-color: none;
   background-color: transparent;
   height: 2rem;
-  width: 25rem;
+  width: max(25rem);
   font-size: large;
   border-top: none;
   border-right: none;
