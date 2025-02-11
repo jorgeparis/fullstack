@@ -9,14 +9,15 @@ import Login from "./pages/Login";
 import Card from "./components/Card";
 
 function App() {
-  let notas = ["Nota-1", "Nota-2"]
+  function handleClick(e) {
+    if (e.target === "button") {
+      console.log(e.target);
+    }
+  }
   return (
     <>
       <div className="main-app">
-        {notas.map((nota,index) => {
-         return <Card note={index} />;
-          console.log(nota);
-        })}
+        <Login/>
       </div>
     </>
   );
