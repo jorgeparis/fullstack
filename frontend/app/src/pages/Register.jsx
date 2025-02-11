@@ -7,7 +7,7 @@ export default function Register() {
     <>
       <div className="rg">
         <h1>Register Account</h1>
-        <Input type="password" placeholder={"Username"} />
+        <Input type="text" placeholder={"Username"} />
         <span></span>
         <Input type="password" placeholder={"Password"} />
         <span></span>

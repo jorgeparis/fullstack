@@ -1,0 +1,20 @@
+.card {
+  height: 20rem;
+  width: 15rem;
+  background-color: rgb(221, 230, 230);
+  border-radius: 1rem;
+  display: flex;
+}
+
+.card img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card .card-body p{
+    margin: 1rem;
+    color: black;
+    font-style: italic;   
+}

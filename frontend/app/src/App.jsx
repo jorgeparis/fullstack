@@ -6,12 +6,17 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Card from "./components/Card";
 
 function App() {
+  let notas = ["Nota-1", "Nota-2"]
   return (
     <>
       <div className="main-app">
-        <Login />
+        {notas.map((nota,index) => {
+         return <Card note={index} />;
+          console.log(nota);
+        })}
       </div>
     </>
   );
