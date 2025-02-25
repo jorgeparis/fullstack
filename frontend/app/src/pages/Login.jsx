@@ -1,4 +1,4 @@
-import Input from "../components/Input";
+import Form from "../components/Form";
 import Button from "../components/Button";
 import "../css/Login.css";
 
@@ -10,14 +10,11 @@ export default function Login() {
           <div className="container-right-text">
             <h1>Welcome</h1>
             <Button type="submit" value="Sign Up" />
-          
           </div>
         </div>
         <div className="login-field-container">
           <h1>Login</h1>
-          <Input type="text" placeholder={"Username"} />
-          <Input type="password" placeholder={"Password"} />
-          <Button type="submit" value="LOGIN" />
+          <Form />
         </div>
       </div>
     </>

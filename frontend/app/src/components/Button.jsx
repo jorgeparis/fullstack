@@ -1,4 +1,7 @@
+
+import PropTypes from 'prop-types';
 import "../css/Button.css";
+
 export default function Button(props) {
   return (
     <>
@@ -12,3 +15,9 @@ export default function Button(props) {
     </>
   );
 }
+
+Button.propTypes = {
+  type: PropTypes.string,
+  value: PropTypes.string,
+};
+

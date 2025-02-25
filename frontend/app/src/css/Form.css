@@ -11,13 +11,30 @@
   caret-color: #009ee2;
   cursor: pointer;
 }
-
+form{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  gap: 2rem;
+}
 .input-field::placeholder {
   color: rgb(37, 41, 39);
 }
 .input-field:focus {
   outline: none;
 }
+.btn {
+  height: 3rem;
+  width: 10rem;
+  background-color: #009ee2;
+  border: none;
+  color: aliceblue;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 .material-symbols-light--supervised-user-circle {
   display: inline-block;

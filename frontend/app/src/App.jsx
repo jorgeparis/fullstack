@@ -9,11 +9,7 @@ import Login from "./pages/Login";
 import Card from "./components/Card";
 
 function App() {
-  function handleClick(e) {
-    if (e.target === "button") {
-      console.log(e.target);
-    }
-  }
+ 
   return (
     <>
       <div className="main-app">
