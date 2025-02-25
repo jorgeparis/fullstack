@@ -1,0 +1,62 @@
+:root {
+  --width-input: 30rem;
+  --height-input: 2rem;
+  --button-width: 10rem;
+  --button-height: 2rem;
+  --border-radius: 0.5rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  place-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 50vw;
+  height: 50vh;
+  background-image: linear-gradient(to bottom right, #f7f7f7, #e0deda);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-flow: column;
+  place-content: center;
+  transform: translate(50%);
+  border-radius: 10rem 3rem 10rem 4rem;
+}
+.login-form {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 2rem;
+  place-content: center;
+  place-items: center;
+  font-size: large;
+}
+
+.login-form input.input-email,
+input.input-password {
+  width: var(--width-input);
+  height: var(--height-input);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+input[type="email"]:focus {
+  outline: none;
+}
+input[type="password"]:focus {
+  outline: none;
+}
+button {
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--border-radius);
+  background-color: #f1a311;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
