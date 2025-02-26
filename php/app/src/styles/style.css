@@ -13,24 +13,47 @@ body {
   display: flex;
   flex-flow: column;
   place-content: center;
+  place-items: center;
   height: 100vh;
 }
 
+.main {
+  width: 50vw;
+  height: 60vh;
+
+  background-image: url("../assets/bg_1.jpg");
+  background-size: cover;
+  aspect-ratio: 1/1;
+}
 .login-container {
   width: 50vw;
-  height: 50vh;
-  background-image: linear-gradient(to bottom right, #f7f7f7, #e0deda);
+  height: 60vh;
   border-radius: var(--border-radius);
+
   display: flex;
   flex-flow: column;
   place-content: center;
-  transform: translate(50%);
-  border-radius: 10rem 3rem 10rem 4rem;
+  place-items: center;
+  border-radius: 2rem;
+  filter: opacity(0.9);
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom left, #31b1c2, #ffd901);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
 }
 .login-form {
   display: flex;
   flex-flow: column wrap;
-  row-gap: 2rem;
+  row-gap: 5rem;
   place-content: center;
   place-items: center;
   font-size: large;
@@ -44,12 +67,24 @@ input.input-password {
   border-left: none;
   border-right: none;
   background-color: transparent;
+  caret-color: #f13f08;
+  font-size: large;
+ 
 }
 input[type="email"]:focus {
   outline: none;
+  font-size: large;
+}
+
+input[type="email"]::placeholder {
+  color: #000000;
 }
 input[type="password"]:focus {
   outline: none;
+  font-size: large;
+}
+input[type="password"]::placeholder {
+  color: #000000;
 }
 button {
   width: var(--button-width);
@@ -59,4 +94,5 @@ button {
   border: none;
   color: white;
   font-weight: bold;
+  font-size: large;
 }
